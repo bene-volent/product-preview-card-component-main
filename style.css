@@ -104,13 +104,22 @@ Property Organisation
 
 /* MOBILE FIRST APPROACH */
 
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
 body{
+
+    scrollbar-width: none;
+
     display: grid;
     place-content:center;
     gap: 1rem;
 
     min-height:100vh;
     min-height:100dvh;
+    padding-block: 2rem;
 
     background-color: var(--clr-cream);
 
@@ -193,6 +202,14 @@ body{
     color:var(--clr-white)
 }
 
+.product__detail-purchase:hover{
+    
+    background-color: hsl(var(--dark-cyan) / 0.9);
+}
+.product__detail-purchase:active{
+    
+    background-color: hsl(156, 42%, 18%);
+}
 
 @media screen and (width > 700px) {
     /* grid-template-rows: 1fr; */
