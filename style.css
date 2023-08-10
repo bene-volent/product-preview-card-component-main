@@ -195,6 +195,7 @@ body{
     gap: var(--fs-400);
 
     padding: var(--fs-500);
+    cursor:pointer;
     border-radius: var(--fs-400);
 
     background-color: var(--clr-dark-cyan);
